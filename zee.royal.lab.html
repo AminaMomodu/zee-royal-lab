@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zee Royal Nedical Laboratory</title>
+    <style>
+      body {
+        background-image: linear-gradient(#f7e5f7, #e7e7e1);
+      }
+      h1 {
+        text-align: center;
+        font-size: 48px;
+        color: #5d0cdf;
+      }
+      h2 {
+        text-align: center;
+        font-size: 30px;
+        color: #ac82ee;
+      }
+      img {
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+      }
+      p {
+        text-align: center;
+        line-height: 1.5;
+        font-size: 18px;
+      }
+      button {
+        display: block;
+        padding: 10px 15px;
+        margin: auto;
+        color: #ac82ee;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 30px;
+        border: 5px solid #ac82ee;
+        background: transparent;
+        box-shadow: 5px 5px 10px #d1a8a8;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #5d0cdf;
+        color: #ffff;
+        cursor: pointer;
+      }
+      .zee {
+        color: #5d0cdf;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Zee Royal Medical Laboratory</h1>
+    <h2>
+      <em> For Accurate and Reliable Medical Diagnosis</em>
+    </h2>
+    <hr />
+    <img
+      src="https://hrs.osu.edu/-/media/images/hrs/pages/academics/undergraduate-programs/med-lab/medlaboverview3.jpg?la=en&hash=853BFA3E79140E9442D5DA832453DA91"
+      alt="a medical laboratory"
+      width="600"
+    />
+    <p>
+      <strong>
+        Discover excellence in healthcare with
+        <span class="zee">Zee Royal Medical Laboratory.</span> <br />
+        From precise diagnostics to compassionate care, we are committed to your
+        well-being.<br />
+        Trust us for accurate and reliable results and expert guidance on your
+        path to good health.
+      </strong>
+    </p>
+    <br />
+    <button>Contact Us Today</button>
+    <br />
+    <p>
+      For more information on a medical laboratory; click the link below👇
+      <br />
+      <a
+        href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FMedical_laboratory&psig=AOvVaw29c5zal-QSsL9wdcvtdDD-&ust=1712066846148000&source=images&cd=vfe&opi=89978449&ved=0CAgQr5oMahcKEwigk7mbmKGFAxUAAAAAHQAAAAAQBA"
+        target="_blank"
+      >
+        Wikepedia
+      </a>
+      <br />
+      <br />
+      <em>Coded by Amina Momodu</em>
+    </p>
+    <script>
+      function contactUsToday() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let appointment = prompt(
+          "Would you like to book an appointment with us?"
+        );
+        if (appointment === "Yes" || "yes") {
+          alert(
+            "😃 Thank you " +
+              name +
+              ", We will contact you through your email, " +
+              email
+          );
+        } else {
+          alert("😌 Hope to hear from you some other time, " + name + "!");
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton.addEventListener("click", contactUsToday);
+    </script>
+  </body>
+</html>
